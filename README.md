@@ -38,4 +38,5 @@ Some sample translation (> denotes the original French sentence, = denotes the t
 < he s a of of of . . <EOS>
 ```
 # To Do
-This is a very tentative version, and the code is far from being polished.
+-This is a very tentative version, and the code is far from being polished. So I guess I need to polish the code
+- I realized that I forgot to pass on the cell states of the LSTMs, I will fix this slightly later
