@@ -1,4 +1,4 @@
-# Fusion LSTM exercise
+ # Fusion LSTM exercise
 This is just a toy example in which we perform fusion of multiple LSTMs at each time step of the unfolding of an LSTM. This example is about French-to-English translation.
 
 The dataset and the basic archetecture are adapted from: <br>
@@ -38,5 +38,5 @@ Some sample translation (> denotes the original French sentence, = denotes the t
 < he s a of of of . . <EOS>
 ```
 # To Do
--This is a very tentative version, and the code is far from being polished. So I guess I need to polish the code
--I realized that I forgot to pass on the cell states of the LSTMs, I will fix this slightly later
+-This is a very tentative version, and the code is far from being polished. So I guess I need to polish the code <br>
+-I realized that I forgot to pass on the cell states of the LSTMs, I will fix this slightly later <br>
