@@ -37,3 +37,5 @@ Some sample translation (> denotes the original French sentence, = denotes the t
 = he is working hard to pass the examination .
 < he s a of of of . . <EOS>
 ```
+# To DO
+This is a very tentative version, and the code is far from being polished.
