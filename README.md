@@ -4,7 +4,7 @@ This is just a toy example in which we perform fusion of multiple LSTMs at each 
 The dataset and the basic archetecture are adapted from: <br>
 http://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
 
-See model.py for details of this implementation. The architecture of the network looks like: <br>
+See model.py for details of the network architecture. The architecture of the network looks like: <br>
 <img src="img/fusionRNN.png" alt="architecture">
 
 
