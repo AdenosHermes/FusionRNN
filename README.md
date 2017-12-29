@@ -1,7 +1,7 @@
 # Fusion LSTM exercise
 This is just a toy example in which we perform fusion of multiple LSTMs at each time step of the unfolding of an LSTM. This example is about French-to-English translation.
 
-The dataset and the basic archetecture can be found in: <br>
+The dataset and the basic archetecture are adapted from: <br>
 http://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
 
 See model.py for details of this implementation. The architecture of the network looks like: <br>
