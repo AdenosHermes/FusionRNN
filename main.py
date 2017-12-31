@@ -1,4 +1,3 @@
-
 from config import *
 from data import *
 from model import *
@@ -27,9 +26,7 @@ def evaluate(encoder, decoder, sentence, max_length=MAX_LENGTH):
     decoder_input = decoder_input.cuda() if use_cuda else decoder_input
 
     decoder_hidden = t
-
     decoded_words = []
-    #decoder_attentions = torch.zeros(max_length, max_length)
 
     for di in range(max_length):
         decoder_output, decoder_hidden = decoder(decoder_input, decoder_hidden)
@@ -44,7 +41,7 @@ def evaluate(encoder, decoder, sentence, max_length=MAX_LENGTH):
         decoder_input = Variable(torch.LongTensor([[ni]]))
         decoder_input = decoder_input.cuda() if use_cuda else decoder_input
 
-    return decoded_words#, decoder_attentions[:di + 1]
+    return decoded_words
 
 
 
@@ -117,8 +114,6 @@ if __name__ == '__main__':
         hidden_size3 = 16
         decoder_size = hidden_size1 + hidden_size2 + hidden_size3
         encoder = MultiEncoder(hidden_size1, hidden_size2, hidden_size3, input_lang.n_words, decoder_size)
-   
-        #attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, 1, dropout_p=0.1)
         decoder = DecoderRNN(decoder_size, output_lang.n_words)
     else:
         print('loading models')

@@ -14,14 +14,9 @@ class EncoderLSTM(nn.Module):
     def forward(self, input, hidden, fusion_hidden):
         embedded = self. embedding(input).view(1, 1, -1)
         output = embedded
-        #print(fusion_fusion_hidden.size())
-        #print(fusion_hidden.size())
         output = torch.cat((output, fusion_hidden), dim=2)
-        #print("encoder:", hidden.size())
-        hidden = (hidden, hidden)
-        #print(self.input_size)
         output, hidden = self.lstm(output, hidden)
-        return output, hidden[0]
+        return output, hidden
 
     def initHidden(self):
         result = Variable(torch.zeros(1, 1, self.hidden_size))
@@ -65,14 +60,17 @@ class FusionLSTM(nn.Module):
 
         self.lstm = nn.LSTM(fusion_size, fusion_size)
         
-    def forward(self, input):
+    def forward(self, input, cell):
         hidden = input.view(1, 1, -1)
-        hidden = (hidden, hidden)
+        hidden = (hidden, cell)
+        #print(hidden)
+
+        #hidden = (hidden, hidden)
         #print(hidden)
         for i in range(self.steps):
-            #hidden = (F.relu(hidden[0]), hidden[1])
-            _, hidden = self.lstm(hidden[0], hidden)
-        return hidden[0]
+            input = F.relu(hidden[0])
+            _, hidden = self.lstm(input, hidden)
+        return hidden
     
     def initHidden(self):
         result = Variable(torch.zeros(1, 1, self.fusion_size))
@@ -83,7 +81,7 @@ class FusionLSTM(nn.Module):
 
 
 class MultiEncoder(nn.Module):
-    def __init__(self, size_1, size_2, size_3, input_size, output_size, step=3):
+    def __init__(self, size_1, size_2, size_3, input_size, output_size, step=2):
         super().__init__()
         self.fusion_size = size_1 + size_2 + size_3
         self.encoder1 = EncoderLSTM(input_size, size_1, self.fusion_size)
@@ -92,26 +90,30 @@ class MultiEncoder(nn.Module):
         
         self.hidden_size = self.fusion_size
         self.fuser = FusionLSTM(self.fusion_size, steps=step)
-
+        
         #self.combine = nn.Linear(fusion_size, 
 
         
         
-    def forward(self, input, hidden_1, hidden_2, hidden_3):
+    def forward(self, input, hidden_1, hidden_2, hidden_3, fusion_state):
         
-        catted_hidden = torch.cat((hidden_1, hidden_2, hidden_3), dim=2)
+        catted_hidden = torch.cat((hidden_1[0], hidden_2[0], hidden_3[0]), dim=2)
         #print(catted_hidden.size())
         
-        fusion_state = self.fuser(catted_hidden)
-        out1, hidden1 = self.encoder1(input, hidden_1, fusion_state)
-        out2, hidden2 = self.encoder2(input, hidden_2, fusion_state)
-        out3, hidden3 = self.encoder3(input, hidden_3, fusion_state)
+        fusion_state = self.fuser(catted_hidden, fusion_state[1])
+        
+        out1, hidden1 = self.encoder1(input, hidden_1, fusion_state[0])
+        out2, hidden2 = self.encoder2(input, hidden_2, fusion_state[0])
+        out3, hidden3 = self.encoder3(input, hidden_3, fusion_state[0])
 
-        return (out1, out2, out3), hidden1, hidden2, hidden3
+        return (out1, out2, out3), hidden1, hidden2, hidden3, fusion_state
 
 
     def initHidden(self):
-        return self.encoder1.initHidden(), self.encoder2.initHidden(), self.encoder3.initHidden()
+        x = self.encoder1.initHidden()
+        y = self.encoder2.initHidden()
+        z = self.encoder3.initHidden()
+        return (x, x), (y, y), (z, z)
 
 
 
