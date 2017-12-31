@@ -12,14 +12,16 @@ def evaluate(encoder, decoder, sentence, max_length=MAX_LENGTH):
     input_variable = variableFromSentence(input_lang, sentence)
     input_length = input_variable.size()[0]
     encoder_hidden1, encoder_hidden2, encoder_hidden3 = encoder.initHidden()
+    catted = torch.cat((encoder_hidden1[0], encoder_hidden2[0], encoder_hidden3[0]), dim=2)
+    fusion_state = (catted, catted)
 
     encoder_outputs = Variable(torch.zeros(max_length, encoder.hidden_size))
     encoder_outputs = encoder_outputs.cuda() if use_cuda else encoder_outputs
 
     for ei in range(input_length):
-        encoder_output, encoder_hidden1, encoder_hidden2, encoder_hidden3 = encoder(input_variable[ei],
-                                                 encoder_hidden1, encoder_hidden2, encoder_hidden3)
-        t = torch.cat((encoder_hidden1, encoder_hidden2, encoder_hidden3), dim=2)
+        encoder_output, encoder_hidden1, encoder_hidden2, encoder_hidden3, fusion_state = encoder(input_variable[ei],
+                                                 encoder_hidden1, encoder_hidden2, encoder_hidden3, fusion_state)
+        t = torch.cat((encoder_hidden1[0], encoder_hidden2[0], encoder_hidden3[0]), dim=2)
         encoder_outputs[ei] = t
 
     decoder_input = Variable(torch.LongTensor([[SOS_token]]))  # SOS
@@ -63,8 +65,8 @@ def trainIters(encoder, decoder, n_iters, print_every=500, plot_every=100,
     print_loss_total = 0  # Reset every print_every
     plot_loss_total = 0  # Reset every plot_every
 
-    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate, momentum=0.2)
-    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate, momentum=0.2)
+    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate, momentum=0.9)
+    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate, momentum=0.9)
     training_pairs = [variablesFromPair(random.choice(pairs))
                       for i in range(n_iters)]
     criterion = nn.NLLLoss()
@@ -119,7 +121,7 @@ if __name__ == '__main__':
         print('loading models')
         encoder = torch.load('encoder.pt')
         decoder = torch.load('decoder.pt')
-        evaluateRandomly(encoder, decoder, n=5)
+        evaluateRandomly(encoder, decoder, n=10)
         
     loss = float('Inf')
     #evaluateRandomly(encoder1, decoder)
