@@ -131,5 +131,5 @@ if __name__ == '__main__':
     else:
         encoder = encoder.cpu()
         decoder = decoder.cpu()
-    trainIters(encoder, decoder, 50000, print_every=1000, best_loss=loss)
+    trainIters(encoder, decoder, 75000, print_every=1000, best_loss=loss)
     evaluateRandomly(encoder, decoder)
