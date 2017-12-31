@@ -21,12 +21,12 @@ EOS_token = 1
 MAX_LENGTH = 40
 use_cuda = torch.cuda.is_available()
 eng_prefixes = (
-    "i am ", "i m ",
-    "he is", "he s ",
-    "she is", "she s",
-    "you are", "you re ",
-    "we are", "we re ",
-    "they are", "they re "
+    "i", "i",
+    "he", "he",
+    "she", "she",
+    "you", "you",
+    "we", "we",
+    "they", "they"
 )
 
-teacher_forcing_ratio = 0.5
+teacher_forcing_ratio = 0.65

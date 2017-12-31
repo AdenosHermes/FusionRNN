@@ -1,4 +1,3 @@
-
 from config import *
 from data import *
 from model import *
@@ -13,23 +12,23 @@ def evaluate(encoder, decoder, sentence, max_length=MAX_LENGTH):
     input_variable = variableFromSentence(input_lang, sentence)
     input_length = input_variable.size()[0]
     encoder_hidden1, encoder_hidden2, encoder_hidden3 = encoder.initHidden()
+    catted = torch.cat((encoder_hidden1[0], encoder_hidden2[0], encoder_hidden3[0]), dim=2)
+    fusion_state = (catted, catted)
 
     encoder_outputs = Variable(torch.zeros(max_length, encoder.hidden_size))
     encoder_outputs = encoder_outputs.cuda() if use_cuda else encoder_outputs
 
     for ei in range(input_length):
-        encoder_output, encoder_hidden1, encoder_hidden2, encoder_hidden3 = encoder(input_variable[ei],
-                                                 encoder_hidden1, encoder_hidden2, encoder_hidden3)
-        t = torch.cat((encoder_hidden1, encoder_hidden2, encoder_hidden3), dim=2)
+        encoder_output, encoder_hidden1, encoder_hidden2, encoder_hidden3, fusion_state = encoder(input_variable[ei],
+                                                 encoder_hidden1, encoder_hidden2, encoder_hidden3, fusion_state)
+        t = torch.cat((encoder_hidden1[0], encoder_hidden2[0], encoder_hidden3[0]), dim=2)
         encoder_outputs[ei] = t
 
     decoder_input = Variable(torch.LongTensor([[SOS_token]]))  # SOS
     decoder_input = decoder_input.cuda() if use_cuda else decoder_input
 
     decoder_hidden = t
-
     decoded_words = []
-    #decoder_attentions = torch.zeros(max_length, max_length)
 
     for di in range(max_length):
         decoder_output, decoder_hidden = decoder(decoder_input, decoder_hidden)
@@ -44,7 +43,7 @@ def evaluate(encoder, decoder, sentence, max_length=MAX_LENGTH):
         decoder_input = Variable(torch.LongTensor([[ni]]))
         decoder_input = decoder_input.cuda() if use_cuda else decoder_input
 
-    return decoded_words#, decoder_attentions[:di + 1]
+    return decoded_words
 
 
 
@@ -66,8 +65,8 @@ def trainIters(encoder, decoder, n_iters, print_every=500, plot_every=100,
     print_loss_total = 0  # Reset every print_every
     plot_loss_total = 0  # Reset every plot_every
 
-    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate, momentum=0.2)
-    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate, momentum=0.2)
+    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate, momentum=0.9)
+    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate, momentum=0.9)
     training_pairs = [variablesFromPair(random.choice(pairs))
                       for i in range(n_iters)]
     criterion = nn.NLLLoss()
@@ -117,14 +116,12 @@ if __name__ == '__main__':
         hidden_size3 = 16
         decoder_size = hidden_size1 + hidden_size2 + hidden_size3
         encoder = MultiEncoder(hidden_size1, hidden_size2, hidden_size3, input_lang.n_words, decoder_size)
-   
-        #attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, 1, dropout_p=0.1)
         decoder = DecoderRNN(decoder_size, output_lang.n_words)
     else:
         print('loading models')
         encoder = torch.load('encoder.pt')
         decoder = torch.load('decoder.pt')
-        evaluateRandomly(encoder, decoder, n=5)
+        evaluateRandomly(encoder, decoder, n=10)
         
     loss = float('Inf')
     #evaluateRandomly(encoder1, decoder)
@@ -134,5 +131,5 @@ if __name__ == '__main__':
     else:
         encoder = encoder.cpu()
         decoder = decoder.cpu()
-    trainIters(encoder, decoder, 50000, print_every=1000, best_loss=loss)
+    trainIters(encoder, decoder, 75000, print_every=1000, best_loss=loss)
     evaluateRandomly(encoder, decoder)

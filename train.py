@@ -22,11 +22,14 @@ def showPlot(points):
     loc = ticker.MultipleLocator(base=0.2)
     ax.yaxis.set_major_locator(loc)
     plt.plot(points)
+    plt.show()
 
 
 
 def train(input_variable, target_variable, encoder, decoder, encoder_optimizer, decoder_optimizer, criterion, max_length=MAX_LENGTH):
     encoder_hidden1, encoder_hidden2, encoder_hidden3 = encoder.initHidden()
+    catted = torch.cat((encoder_hidden1[0], encoder_hidden2[0], encoder_hidden3[0]), dim=2)
+    fusion_state = (catted, catted)
 
     encoder_optimizer.zero_grad()
     decoder_optimizer.zero_grad()
@@ -40,11 +43,12 @@ def train(input_variable, target_variable, encoder, decoder, encoder_optimizer, 
     loss = 0
 
     for ei in range(input_length):
-        encoder_output, encoder_hidden1, encoder_hidden2, encoder_hidden3 = encoder(input_variable[ei], encoder_hidden1, encoder_hidden2, encoder_hidden3)
+        encoder_output, encoder_hidden1, encoder_hidden2, encoder_hidden3,fusion_state = encoder(
+            input_variable[ei], encoder_hidden1, encoder_hidden2, encoder_hidden3, fusion_state)
         #print(encoder_hidden1.size())
         #print(encoder_hidden2.size())
         #print(encoder_hidden3.size())
-        t = torch.cat((encoder_hidden1, encoder_hidden2, encoder_hidden3), dim=2)
+        t = torch.cat((encoder_hidden1[0], encoder_hidden2[0], encoder_hidden3[0]), dim=2)
         encoder_outputs[ei] = t
         
 
