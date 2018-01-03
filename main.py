@@ -65,8 +65,8 @@ def trainIters(encoder, decoder, n_iters, print_every=500, plot_every=100,
     print_loss_total = 0  # Reset every print_every
     plot_loss_total = 0  # Reset every plot_every
 
-    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate, momentum=0.9)
-    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate, momentum=0.9)
+    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate, momentum=0.2)
+    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate, momentum=0.2)
     training_pairs = [variablesFromPair(random.choice(pairs))
                       for i in range(n_iters)]
     criterion = nn.NLLLoss()

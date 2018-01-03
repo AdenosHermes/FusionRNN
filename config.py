@@ -18,15 +18,20 @@ import torch.nn.functional as F
 SOS_token = 0
 EOS_token = 1
 
+
+
+
 MAX_LENGTH = 40
-use_cuda = torch.cuda.is_available()
+
 eng_prefixes = (
-    "i", "i",
-    "he", "he",
-    "she", "she",
-    "you", "you",
-    "we", "we",
-    "they", "they"
+    "i am ", "i m ",
+    "he is", "he s ",
+    "she is", "she s",
+    "you are", "you re ",
+    "we are", "we re ",
+    "they are", "they re "
 )
 
-teacher_forcing_ratio = 0.65
+use_cuda = torch.cuda.is_available()
+
+teacher_forcing_ratio = 0.5

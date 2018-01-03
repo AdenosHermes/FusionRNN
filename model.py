@@ -51,6 +51,37 @@ class DecoderRNN(nn.Module):
         else:
             return result
 
+class WeightLSTM(nn.Module):
+    # A decoder LSTM that takes the concatenated hidden states from
+    # different modalities and outputs the weight for the modalities
+    # input: dim = fusion_size
+    # output: dim = fusion_size
+    def __init__(self, fusion_size, steps=1, LSTM=True):
+        super(WeightLSTM, self).__init__()
+        self.steps = steps
+        self.fusion_size = fusion_size
+        if LSTM == True:
+            self.decoder = nn.LSTM(fusion_size, fusion_size)
+        else:
+            self.decoder = nn.GRU(fusion_size, fusion_size)
+        #self.out = nn.Linear(fusion_size, fusion_size)
+        self.softmax = nn.LogSoftmax(dim=2)
+
+    def forward(self, input, hidden):
+        output = input.view(1, 1, -1)
+        for i in range(self.steps):
+            #output = F.relu(output)
+            output, hidden = self.decoder(output, hidden)
+        #print(hidden)
+        output = self.softmax(hidden[0])
+        return output, hidden
+
+    def initHidden(self):
+        result = Variable(torch.zeros(1, 1, self.fusion_size))
+        if use_cuda:
+            return result.cuda()
+        else:
+            return result 
 
 class FusionLSTM(nn.Module):
     def __init__(self, fusion_size, steps=3):
@@ -58,30 +89,38 @@ class FusionLSTM(nn.Module):
         self.steps = steps
         self.fusion_size = fusion_size
 
-        self.lstm = nn.LSTM(fusion_size, fusion_size)
+        self.fusion = nn.LSTM(fusion_size, fusion_size)
+        self.coeff = WeightLSTM(fusion_size)
+        #self.weight = Variable(torch.ones(1, 1, self.fusion_size).type(torch.FloatTensor) / self.fusion_size)
+
+
         
     def forward(self, input, cell):
         hidden = input.view(1, 1, -1)
         hidden = (hidden, cell)
-        #print(hidden)
 
-        #hidden = (hidden, hidden)
-        #print(hidden)
+        coeffHidden = hidden
+        #self.coeff.initHidden()
         for i in range(self.steps):
-            input = F.relu(hidden[0])
-            _, hidden = self.lstm(input, hidden)
+            input = hidden[0]
+            self.weight, coeffHidden = self.coeff(self.weight, coeffHidden)
+            weightedInput = torch.mul(input, self.weight)
+            _, hidden = self.fusion(weightedInput, hidden)
         return hidden
     
     def initHidden(self):
-        result = Variable(torch.zeros(1, 1, self.fusion_size))
+        #result = Variable(torch.zeros(1, 1, self.fusion_size))
+        self.weight = Variable(torch.ones(1, 1, self.fusion_size).type(torch.FloatTensor) / self.fusion_size)
         if use_cuda:
-            return result.cuda()
+            self.weight = self.weight.cuda()
+            #return result.cuda()
         else:
-            return result
+            self.weight = self.weight
+            #return result
 
 
 class MultiEncoder(nn.Module):
-    def __init__(self, size_1, size_2, size_3, input_size, output_size, step=2):
+    def __init__(self, size_1, size_2, size_3, input_size, output_size, step=3):
         super().__init__()
         self.fusion_size = size_1 + size_2 + size_3
         self.encoder1 = EncoderLSTM(input_size, size_1, self.fusion_size)
@@ -113,6 +152,7 @@ class MultiEncoder(nn.Module):
         x = self.encoder1.initHidden()
         y = self.encoder2.initHidden()
         z = self.encoder3.initHidden()
+        self.fuser.initHidden()
         return (x, x), (y, y), (z, z)
 
 
