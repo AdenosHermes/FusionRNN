@@ -58,7 +58,7 @@ def evaluateRandomly(encoder, decoder, n=10):
         print('')
 
         
-def trainIters(encoder, decoder, n_iters, print_every=500, plot_every=100,
+def trainIters(encoder, decoder, n_iters, print_every=500, plot_every=500,
                learning_rate=0.01, best_loss=float('Inf')):
     start = time.time()
     plot_losses = []

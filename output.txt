@@ -1,0 +1,1235 @@
+Reading lines...
+Read 135842 sentence pairs
+Trimmed to 13465 sentence pairs
+Counting words...
+Counted words:
+fra 5392
+eng 3552
+3m 28s (- 257m 12s) (1000 1%) 3.4797
+saving model at iteration 1000 with loss 3.4797
+> je peux conduire une voiture .
+= i am able to drive a car .
+< i m not a . <EOS>
+
+> vous n etes pas fatiguee si ?
+= you re not tired are you ?
+< you re very . <EOS>
+
+> je suis desole j ai ouvert votre courrier par erreur .
+= i m sorry i opened your mail by mistake .
+< i m not a . <EOS>
+
+> elle se tint aussi pres de lui qu elle put .
+= she stood as close to him as she could .
+< they re very . <EOS>
+
+> il est riche .
+= he is well off .
+< they re very . <EOS>
+
+6m 57s (- 254m 15s) (2000 2%) 3.1857
+saving model at iteration 2000 with loss 3.1857
+> je suis respectueuse .
+= i m observant .
+< i am not . <EOS>
+
+> il est fiance a ma jeune s ur .
+= he is engaged to my younger sister .
+< he s a very . <EOS>
+
+> on est jamais trop vieux pour apprendre .
+= you re never too old to learn .
+< he s not to . . <EOS>
+
+> nous sommes condamnes .
+= we re doomed .
+< we re all . <EOS>
+
+> vous n etes pas suppose vous trouver la .
+= you re not supposed to be here .
+< you re not to . you re all . <EOS>
+
+10m 21s (- 248m 32s) (3000 4%) 3.0676
+saving model at iteration 3000 with loss 3.0676
+> il est plus fort que jamais .
+= he is stronger than ever .
+< he is a to to <EOS>
+
+> nous avons tous deux raison .
+= we re both right .
+< we re not in . <EOS>
+
+> tu es une sale menteuse !
+= you re a filthy liar !
+< you re not good . <EOS>
+
+> il est l un des meilleurs .
+= he s one of the best .
+< he is a a . <EOS>
+
+> nous ne sommes pas assurees .
+= we re uninsured .
+< we re not . <EOS>
+
+13m 44s (- 243m 57s) (4000 5%) 2.9162
+saving model at iteration 4000 with loss 2.9162
+> je suis desolee de te deranger .
+= i am sorry to trouble you .
+< i m glad to . . . <EOS>
+
+> elles mentent toutes .
+= they re all lying .
+< they re all . . . <EOS>
+
+> je suis fier du travail que j ai fait ici .
+= i m proud of the work i ve done here .
+< i m sorry i didn t . <EOS>
+
+> nous allons manquer de gaz .
+= we re running out of gas .
+< we re all . . . <EOS>
+
+> je suis en vacances .
+= i m on holiday .
+< i m a . . . <EOS>
+
+17m 10s (- 240m 24s) (5000 6%) 2.8252
+saving model at iteration 5000 with loss 2.8252
+> je suis prete pour demain .
+= i m ready for tomorrow .
+< i m a . <EOS>
+
+> je suis paume maintenant .
+= i m confused now .
+< i m very . <EOS>
+
+> je suis a boston .
+= i m in boston .
+< i m a . <EOS>
+
+> je suis las de boston .
+= i m tired of boston .
+< i m glad you . <EOS>
+
+> je suis tres inquiet a ton sujet .
+= i m very worried about you .
+< i m glad you you . <EOS>
+
+20m 35s (- 236m 45s) (6000 8%) 2.8384
+24m 0s (- 233m 14s) (7000 9%) 2.7313
+saving model at iteration 7000 with loss 2.7313
+> il fume plus que jamais .
+= he s smoking more than ever .
+< he is his to . . <EOS>
+
+> je suis desole je ne t ai pas entendu .
+= i m sorry i didn t hear you .
+< i m sorry i i didn t you . <EOS>
+
+> vous etes endurants .
+= you re resilient .
+< you re very . <EOS>
+
+> je suis prepare .
+= i m prepared .
+< i m a . <EOS>
+
+> il est content de sa vie simple .
+= he is content with the simple life .
+< he is his to of . <EOS>
+
+27m 23s (- 229m 21s) (8000 10%) 2.5799
+saving model at iteration 8000 with loss 2.5799
+> je suis sure qu il m a confondue avec ma s ur .
+= i m sure he mistook me for my sister .
+< i m sure he s my s my s my s . <EOS>
+
+> je suis heureux de vous avoir invitee .
+= i m glad i invited you .
+< i m sorry to have you you <EOS>
+
+> tu en es en partie responsable .
+= you are in part responsible for it .
+< you re the one . <EOS>
+
+> nous sommes satisfaits .
+= we re satisfied .
+< we re all . <EOS>
+
+> il va me l expliquer .
+= he is going to explain it to me .
+< he s the to to <EOS>
+
+30m 47s (- 225m 50s) (9000 12%) 2.5611
+saving model at iteration 9000 with loss 2.5611
+> je suis contente que vous soyez en avance .
+= i m glad you re early .
+< i m glad you re . <EOS>
+
+> nous sommes serieux .
+= we re serious .
+< we re all . <EOS>
+
+> je plaisante .
+= i am joking .
+< i m looking . <EOS>
+
+> nous sommes seules .
+= we re alone .
+< we re going . <EOS>
+
+> elle n est pas aussi agee que marie .
+= she s not as old as mary .
+< she is not as as as as as <EOS>
+
+34m 14s (- 222m 37s) (10000 13%) 2.4778
+saving model at iteration 10000 with loss 2.4778
+> ils se trouvent juste derriere toi .
+= they re right behind you .
+< they re all to you . <EOS>
+
+> ils sont asiatiques .
+= they re asian .
+< they re very . <EOS>
+
+> ca va merci .
+= i m fine thank you .
+< you re the . . <EOS>
+
+> ils sont chanceux d etre en vie .
+= they re lucky to be alive .
+< they re all to . <EOS>
+
+> je suis vraiment content d etre tombe sur toi .
+= i m really glad i ran into you .
+< i m very glad to be be . <EOS>
+
+37m 39s (- 219m 3s) (11000 14%) 2.4357
+saving model at iteration 11000 with loss 2.4357
+> vous etes des actrices .
+= you are actresses .
+< you re all . <EOS>
+
+> c est le seul enfant qu ils aient .
+= he is the only child they have .
+< he is the only person who who can me . <EOS>
+
+> il est fiance a ma s ur .
+= he is engaged to my sister .
+< he is my my my my my . <EOS>
+
+> je suis touche !
+= i m hit !
+< i m so ! <EOS>
+
+> il souffre d un mal de dents .
+= he is suffering from toothache .
+< he s a of a . <EOS>
+
+41m 4s (- 215m 36s) (12000 16%) 2.3259
+saving model at iteration 12000 with loss 2.3259
+> vous n etes pas l un des notres .
+= you re aren t one of us .
+< you re not allowed to eat . <EOS>
+
+> t es une drole de fille .
+= you re a funny gal .
+< you re a a person . <EOS>
+
+> tout est bien qui finit bien .
+= i m just glad everything worked out .
+< he s really old enough to . <EOS>
+
+> elle est mariee a un etranger .
+= she s married to a foreigner .
+< she s a a person . <EOS>
+
+> il est en colere apres toi .
+= he is angry with you .
+< he s a for you . <EOS>
+
+44m 29s (- 212m 13s) (13000 17%) 2.3001
+saving model at iteration 13000 with loss 2.3001
+> je suis trop fatigue pour conduire .
+= i m too tired to drive .
+< i m too tired to . . <EOS>
+
+> tu es ruse .
+= you re crafty .
+< you re the . <EOS>
+
+> vous n etes pas autorisee a amener des chiens dans ce batiment .
+= you are not permitted to bring dogs into this building .
+< you re not allowed to eat this this . <EOS>
+
+> je suis creve .
+= i am exhausted .
+< i am . <EOS>
+
+> je me rejouis que vous vous portiez mieux .
+= i m glad you re doing better .
+< i m glad you re the . <EOS>
+
+47m 55s (- 208m 49s) (14000 18%) 2.2368
+saving model at iteration 14000 with loss 2.2368
+> vous n etes pas la premiere .
+= you re not the first .
+< you re not the . . <EOS>
+
+> je suis desole pour tout ce que je t ai fait .
+= i m sorry for everything i ve done to you .
+< i m sorry i i to to my for <EOS>
+
+> nous sommes a peu pres de la meme taille .
+= we re about the same height .
+< we re out of the same . <EOS>
+
+> il devient ramollo avec l age .
+= he s getting soft in his old age .
+< he is from the of with . <EOS>
+
+> vous etes tres ingenieux .
+= you re very clever .
+< you re very wise . <EOS>
+
+51m 17s (- 205m 10s) (15000 20%) 2.1415
+saving model at iteration 15000 with loss 2.1415
+> vous etes tres effrontees .
+= you re very forward .
+< you re very generous . <EOS>
+
+> vous etes grand .
+= you are big .
+< you re big . <EOS>
+
+> je suis gaucher .
+= i m left handed .
+< i m a . <EOS>
+
+> elle est une artiste nee .
+= she is a gifted artist .
+< she is a with a . <EOS>
+
+> je suis trop fatigue pour marcher plus longtemps .
+= i m too tired to walk any longer .
+< i m too tired to go . <EOS>
+
+54m 41s (- 201m 41s) (16000 21%) 2.0487
+saving model at iteration 16000 with loss 2.0487
+> elles parlent .
+= they re talking .
+< they re all . . <EOS>
+
+> je suis sur que tu dois avoir beaucoup de questions .
+= i m sure you must have a lot of questions .
+< i m sure you didn have to to . . . <EOS>
+
+> tu es au courant de quelque chose .
+= you re on to something .
+< you re the of of the . . <EOS>
+
+> je suis aussi age que vous .
+= i m as old as you .
+< i m as as as you as me . <EOS>
+
+> vous etes tres craintif .
+= you re very timid .
+< you re very understanding . <EOS>
+
+58m 7s (- 198m 19s) (17000 22%) 2.0968
+61m 29s (- 194m 42s) (18000 24%) 2.0013
+saving model at iteration 18000 with loss 2.0013
+> nous sommes en recession .
+= we re in a recession .
+< we re in a . <EOS>
+
+> vous etes precis .
+= you re precise .
+< you re talkative . <EOS>
+
+> elle l a vu manger un sandwich .
+= she saw him eating a sandwich .
+< she s about a a . . <EOS>
+
+> vous etes l institutrice .
+= you re the teacher .
+< you re the one . <EOS>
+
+> je ne suis pas votre ami .
+= i m no friend of yours .
+< i m not your friend . <EOS>
+
+64m 53s (- 191m 16s) (19000 25%) 1.9920
+saving model at iteration 19000 with loss 1.9920
+> j attends avec impatience le retour du printemps .
+= i m looking forward to the return of spring .
+< i m going to to with with . <EOS>
+
+> je me rends compte des difficultes .
+= i m aware of the difficulties .
+< i m going to . . <EOS>
+
+> vous etes des opportunistes .
+= you re opportunistic .
+< you re invited . <EOS>
+
+> j en ai fini de vous .
+= i m done with you .
+< i m done of you . <EOS>
+
+> nous nous portons mieux sans toi .
+= we re better off without you .
+< we re all sure you . <EOS>
+
+68m 16s (- 187m 45s) (20000 26%) 1.9449
+saving model at iteration 20000 with loss 1.9449
+> j ai pour ainsi dire trop mange .
+= i m kind of full .
+< i m too old for to . . . <EOS>
+
+> on m a promu .
+= i m being promoted .
+< i m being to me . <EOS>
+
+> je suis sincerement desole .
+= i m truly sorry .
+< i m sorry . . <EOS>
+
+> je ne suis pas le seul avec un enfant .
+= i m not the only one with a child .
+< i m not a the in one . . . . . <EOS>
+
+> vous etes liberees de toute responsabilite .
+= you re free of all responsibility .
+< you re free of all responsibility . <EOS>
+
+71m 42s (- 184m 22s) (21000 28%) 1.9183
+saving model at iteration 21000 with loss 1.9183
+> tu es tres genereuse .
+= you re very generous .
+< you re very nice . <EOS>
+
+> il est tres amical avec nous .
+= he is very friendly to us .
+< he s very to . . <EOS>
+
+> tu es fort occupee .
+= you re very busy .
+< you re very busy . <EOS>
+
+> c est le dernier a dire du mal des autres .
+= he is the last person to speak ill of others .
+< he s a of of of . . . . <EOS>
+
+> il est toujours en train de lire .
+= he is always reading .
+< he s always complaining . . <EOS>
+
+75m 3s (- 180m 49s) (22000 29%) 1.8314
+saving model at iteration 22000 with loss 1.8314
+> je vais y songer .
+= i m going to sleep on it .
+< i m going to go . <EOS>
+
+> tu es tellement idiot !
+= you re such an idiot !
+< you re so sweet . <EOS>
+
+> je creve de faim !
+= i m starving .
+< i m so hungry . <EOS>
+
+> j en suis consciente .
+= i m aware of that .
+< i m happy with it . <EOS>
+
+> je suis sure qu elle partira tot .
+= i m sure she ll leave early .
+< i m sure she is early . <EOS>
+
+78m 30s (- 177m 30s) (23000 30%) 1.8401
+81m 55s (- 174m 5s) (24000 32%) 1.8106
+saving model at iteration 24000 with loss 1.8106
+> je ne suis meme pas sure de vouloir voir ce film .
+= i m not even sure i want to see that movie .
+< i m not sure i i this this problem . <EOS>
+
+> il prend plein d oseille .
+= he s raking it in .
+< he s always complaining . <EOS>
+
+> je ne suis pas certaine de vouloir faire quoi que ce soit .
+= i m not sure i want to do anything .
+< i m not sure i ve anything anything . <EOS>
+
+> je suis desolee mais j ai deja une petite amie .
+= i m sorry but i already have a girlfriend .
+< i m sorry i already have a friend . . . <EOS>
+
+> je suis surpris de l apprendre .
+= i am surprised to learn this .
+< i am surprised to the . . <EOS>
+
+85m 18s (- 170m 37s) (25000 33%) 1.7431
+saving model at iteration 25000 with loss 1.7431
+> je suis desolee . j ai oublie .
+= i m sorry . i forgot .
+< i m sorry . <EOS>
+
+> je ne suis pas arme .
+= i m not armed .
+< i m not a . <EOS>
+
+> c est une fille blonde .
+= she is a blonde girl .
+< she s a nice girl . <EOS>
+
+> si j ai offusque quelqu un je m en excuse .
+= i m sorry if i offended anyone .
+< i m sorry if i frightened you . <EOS>
+
+> je suis desole de ne pas pouvoir te rencontrer ce soir .
+= i m sorry that i can t meet you tonight .
+< i m sorry but i don t recognize to you . <EOS>
+
+88m 45s (- 167m 15s) (26000 34%) 1.7165
+saving model at iteration 26000 with loss 1.7165
+> nous sommes tous tres inquiets pour toi .
+= we re all very worried about you .
+< you re all very good . <EOS>
+
+> je l emporte .
+= i m winning .
+< i m at . <EOS>
+
+> vous etes tres vifs .
+= you re very sharp .
+< you re very clever . <EOS>
+
+> ils ne sont pas satisfaits .
+= they re not happy .
+< they re not dead . <EOS>
+
+> je suis pret pour partir .
+= i m ready to go .
+< i m ready ready . <EOS>
+
+92m 12s (- 163m 54s) (27000 36%) 1.7068
+saving model at iteration 27000 with loss 1.7068
+> je ne vais pas m impliquer .
+= i m not getting involved .
+< i m not going to . . <EOS>
+
+> elles sont toutes fausses .
+= they re all fake .
+< they re all dead . <EOS>
+
+> elle chantait assez bien .
+= she sang pretty well .
+< she s well better . <EOS>
+
+> nous sommes synchronisees .
+= we re in sync .
+< we re in . <EOS>
+
+> tu es creative .
+= you re creative .
+< you re creative . <EOS>
+
+95m 40s (- 160m 35s) (28000 37%) 1.6922
+saving model at iteration 28000 with loss 1.6922
+> il est exactement celui qu il faut pour le poste .
+= he is the very man for the job .
+< he is likely to win it for it . <EOS>
+
+> vous etes snob .
+= you re a snob .
+< you re the oldest . <EOS>
+
+> il est fier d etre medecin .
+= he is proud of being a doctor .
+< he is proud proud of being a doctor . <EOS>
+
+> nous sommes sur le point de partir d ici .
+= we are about to leave here .
+< we are sure to leave the . <EOS>
+
+> je ne parle pas avec vous .
+= i m not talking to you .
+< i m not talking with you . <EOS>
+
+99m 5s (- 157m 10s) (29000 38%) 1.6684
+saving model at iteration 29000 with loss 1.6684
+> je capte .
+= i m catching on .
+< i am leaving . <EOS>
+
+> je suis maigrichon .
+= i m skinny .
+< i m exhausted . <EOS>
+
+> je m en rejouis d avance .
+= i m looking forward to that .
+< i am happy to be . <EOS>
+
+> je ne suis pas un drogue .
+= i m not a drug addict .
+< i m not a liar . <EOS>
+
+> je ne suis certainement pas ton amie .
+= i m certainly not your friend .
+< i m not your friend . <EOS>
+
+102m 30s (- 153m 46s) (30000 40%) 1.6292
+saving model at iteration 30000 with loss 1.6292
+> je suis heureux avec ce que j ai .
+= i m happy with what i ve got .
+< i m happy with what i ve . <EOS>
+
+> vous etes vraiment embetant .
+= you re really annoying .
+< you re really awesome . <EOS>
+
+> je me rejouis d entendre votre voix .
+= i am happy to hear your voice .
+< i am glad to hear that . <EOS>
+
+> nous attendons les vacances avec impatience .
+= we are looking forward to the holidays .
+< we are looking for the of . <EOS>
+
+> je me rejouis que tu aies decide de venir .
+= i m glad you decided to come .
+< i m glad you decided to come . <EOS>
+
+105m 56s (- 150m 21s) (31000 41%) 1.6329
+109m 19s (- 146m 54s) (32000 42%) 1.5550
+saving model at iteration 32000 with loss 1.5550
+> nous sommes toujours en vie .
+= we re still alive .
+< we re still alive . <EOS>
+
+> j ai faim car je n ai pas pris mon petit dejeuner .
+= i am hungry because i did not eat breakfast .
+< i m sorry but i haven t t who my my . . <EOS>
+
+> nous descendons .
+= we re going down .
+< we re getting . . <EOS>
+
+> elle est incapable de faire face a la tension .
+= she is unable to cope with stress .
+< she is to to to . . . <EOS>
+
+> tu es toujours aussi affaire qu une abeille .
+= you are always as busy as a bee .
+< you re as busy as fast as me . <EOS>
+
+112m 45s (- 143m 30s) (33000 44%) 1.5145
+saving model at iteration 33000 with loss 1.5145
+> je suis desolee si je t ai effraye .
+= i m sorry if i frightened you .
+< i m sorry if i frightened you . <EOS>
+
+> c est un etasunien d origine chinoise .
+= he s a chinese american .
+< he s a american . <EOS>
+
+> tu es assez grand pour gagner ta vie par toi meme .
+= you are old enough to make your own living .
+< you are old enough to your your own . <EOS>
+
+> vous me tuez .
+= you re killing me .
+< i m being you . <EOS>
+
+> vous etes depourvus d ambition .
+= you re unambitious .
+< you re unambitious . <EOS>
+
+116m 8s (- 140m 2s) (34000 45%) 1.5008
+saving model at iteration 34000 with loss 1.5008
+> je suis perplexe .
+= i m baffled .
+< i m wet . <EOS>
+
+> je m eloigne de la ville pour quelques jours .
+= i am leaving town for a few days .
+< i m taking a of days days . <EOS>
+
+> ce n est qu une enfant .
+= she s just a child .
+< she s a child child child . <EOS>
+
+> vous gagnez .
+= you re winning .
+< you re winning . <EOS>
+
+> t es un gros nounours .
+= you re a big softy .
+< you re a good person . <EOS>
+
+119m 31s (- 136m 35s) (35000 46%) 1.4987
+saving model at iteration 35000 with loss 1.4987
+> nous n allons pas nous marier .
+= we re not getting married .
+< we re not going . <EOS>
+
+> je suis tellement gene que je veux mourir .
+= i m so embarrassed i want to die .
+< i m so embarrassed i want to help . <EOS>
+
+> elle m a montre une lettre ecrite en anglais .
+= she showed me a letter written in english .
+< she showed him to a a english . <EOS>
+
+> je suis tres heureux en georgie .
+= i am very happy in georgia .
+< i m very happy to be very happy . <EOS>
+
+> j en ai assez de me disputer .
+= i m tired of arguing .
+< i m tired of tired . <EOS>
+
+122m 54s (- 133m 9s) (36000 48%) 1.4714
+saving model at iteration 36000 with loss 1.4714
+> il est intelligent .
+= he s smart .
+< he s smart . <EOS>
+
+> c est une mauvaise personne .
+= he is a bad person .
+< he is a member person . <EOS>
+
+> toutes ces disputes commencent a me fatiguer .
+= i m growing tired of all this arguing .
+< i am very to to with my . . <EOS>
+
+> je suis trop fatigue pour reflechir maintenant a ce probleme .
+= i m too tired to think about this problem now .
+< i m too tired to now this now . <EOS>
+
+> je suis fatiguee de boston .
+= i m tired of boston .
+< i m tired of hearing . <EOS>
+
+126m 20s (- 129m 45s) (37000 49%) 1.4399
+saving model at iteration 37000 with loss 1.4399
+> vous etes malines .
+= you re clever .
+< you re overworked . <EOS>
+
+> vous allez etre sur pieds .
+= you re going to be ok .
+< you re going to be ok . <EOS>
+
+> c est vous le maitre .
+= you re the master .
+< you re the oldest . <EOS>
+
+> elle n est pas poete mais romanciere .
+= she is not a poet but a novelist .
+< she s not a but . . <EOS>
+
+> ils bronzent autour de la piscine .
+= they re sunbathing around the pool .
+< they re jittery of the same . <EOS>
+
+129m 47s (- 126m 23s) (38000 50%) 1.4336
+saving model at iteration 38000 with loss 1.4336
+> nous sommes vraiment saoules .
+= we re really drunk .
+< we re really sorry . <EOS>
+
+> elles s ennuient .
+= they are bored .
+< they re coming . <EOS>
+
+> tu es celle la .
+= you are the one .
+< you re the teacher . <EOS>
+
+> vous etes un de ces menteurs !
+= you are such a liar !
+< you are a to liar ! <EOS>
+
+> elle est toujours vetue de noir .
+= she is always dressed in black .
+< she is always at of <EOS>
+
+133m 11s (- 122m 56s) (39000 52%) 1.3645
+saving model at iteration 39000 with loss 1.3645
+> nous n en avons pas fini .
+= we re not done .
+< we re not done . <EOS>
+
+> je suis sure que vous me raconterez ce que je veux savoir .
+= i m sure you ll tell me what i want to know .
+< i m sure that i ll be ok me . <EOS>
+
+> tu es toubib .
+= you are a doctor .
+< you re a . <EOS>
+
+> t es sympa .
+= you re cool .
+< you re nice . <EOS>
+
+> je n ai plus peur des araignees .
+= i m no longer afraid of spiders .
+< i m not afraid of of <EOS>
+
+136m 40s (- 119m 35s) (40000 53%) 1.3540
+saving model at iteration 40000 with loss 1.3540
+> je suis desolee de ne pas t avoir davantage soutenu lorsque tu en avais besoin .
+= i m sorry for not being more supportive when you needed me to be .
+< i m sorry for not being more supportive when you needed me to be . <EOS>
+
+> vous etes fort talentueuses .
+= you re very talented .
+< you re very attractive . <EOS>
+
+> je suis allonge dans l herbe .
+= i m lying on the grass .
+< i m always at it . . <EOS>
+
+> je suis sincere .
+= i m sincere .
+< i m not . . <EOS>
+
+> vous etes tres genereuses .
+= you re very generous .
+< you re very observant . <EOS>
+
+140m 3s (- 116m 8s) (41000 54%) 1.2989
+saving model at iteration 41000 with loss 1.2989
+> je suis trop fatigue pour sortir courir .
+= i m too tired to go out jogging .
+< i m too tired to think . <EOS>
+
+> j en ai fini avec mon travail . sortons .
+= i m through with my work . let s go out .
+< i m through with my work . <EOS>
+
+> je ne le fais que pour votre bien .
+= i m only doing this for your own good .
+< i m only doing this for your your . <EOS>
+
+> je vais me pieuter .
+= i m going to hit the hay .
+< i m going to . . <EOS>
+
+> vous entrez dans la trentaine .
+= you re turning thirty .
+< you re going to the . . <EOS>
+
+143m 24s (- 112m 40s) (42000 56%) 1.2767
+saving model at iteration 42000 with loss 1.2767
+> je suis fou de vous .
+= i m crazy about you .
+< i m crazy about you you . <EOS>
+
+> je suis trop fatigue pour courir .
+= i am too tired to run .
+< i am too tired to think . <EOS>
+
+> je vais prendre mes vacances en septembre plutot qu en juillet .
+= i m going to take my vacation in september rather than july .
+< i m going to take my vacation a vacation . <EOS>
+
+> vous etes plus grandes que moi .
+= you are taller than me .
+< you re smarter than me . <EOS>
+
+> tu es idiote .
+= you re being silly .
+< you re fashionable . <EOS>
+
+146m 46s (- 109m 13s) (43000 57%) 1.3035
+150m 10s (- 105m 47s) (44000 58%) 1.2162
+saving model at iteration 44000 with loss 1.2162
+> elle a les pieds en dedans .
+= she is pigeon toed .
+< she is wearing in . <EOS>
+
+> tu es impressionne pas vrai ?
+= you re impressed aren t you ?
+< you re not a city . <EOS>
+
+> je suis a la gare de tokyo en ce moment .
+= i m at tokyo station now .
+< i m staying at right now . <EOS>
+
+> il a des chances d avoir un livre et un biscuit pour ses repas . . .et puis d oublier de manger le biscuit !
+= he is likely to have a book and a cracker at his meals and then forget to eat the cracker !
+< he s likely and likely to have of his and in his word . <EOS>
+
+> il ne va pas mieux et il y a peu de chance de guerison .
+= he is not much better and there is a little hope of recovery .
+< he s not very smart and . . <EOS>
+
+153m 36s (- 102m 24s) (45000 60%) 1.1671
+saving model at iteration 45000 with loss 1.1671
+> je n y suis pas hostile .
+= i m not unsympathetic .
+< i m not happy with . <EOS>
+
+> elle est en train de preparer le petit dejeuner .
+= she s getting breakfast ready .
+< she is having the the wrong . . <EOS>
+
+> je ne suis pas interesse par votre opinion .
+= i m not interested in your opinion .
+< i m not interested in your opinion . <EOS>
+
+> je suis completement saoul .
+= i m totally drunk .
+< i m totally confused . <EOS>
+
+> ils mentent tous .
+= they re all lying .
+< they re all lying . <EOS>
+
+157m 2s (- 99m 0s) (46000 61%) 1.2326
+160m 24s (- 95m 33s) (47000 62%) 1.1963
+163m 50s (- 92m 9s) (48000 64%) 1.1391
+saving model at iteration 48000 with loss 1.1391
+> je ne suis pas sourd .
+= i m not deaf .
+< i am not deaf . <EOS>
+
+> je ne suis pas encore fatigue .
+= i m not tired yet .
+< i m not tired tired . <EOS>
+
+> vous etes puissant .
+= you re powerful .
+< you re powerful . <EOS>
+
+> elle est extremement sensible au froid .
+= she is exceedingly sensitive to the cold .
+< she is sensitive to the cold cold . <EOS>
+
+> j en ai ras le bol d ecouter ses recriminations .
+= i m sick of listening to her complaints .
+< i m sick of listening to her complaints . <EOS>
+
+167m 16s (- 88m 45s) (49000 65%) 1.1699
+170m 44s (- 85m 22s) (50000 66%) 1.1553
+174m 9s (- 81m 57s) (51000 68%) 1.1400
+177m 32s (- 78m 31s) (52000 69%) 1.1143
+saving model at iteration 52000 with loss 1.1143
+> tu n es pas censee nager ici .
+= you aren t supposed to swim here .
+< you re not supposed to swim . <EOS>
+
+> elle est active .
+= she is active .
+< she is a . <EOS>
+
+> vous hallucinez completement .
+= you re completely delusional .
+< you re completely delusional . <EOS>
+
+> elle dit que cela pouvait etre vrai .
+= she said that it might be true .
+< she said that be be be . <EOS>
+
+> je compte dessus .
+= i m counting on it .
+< i m counting on . <EOS>
+
+180m 55s (- 75m 5s) (53000 70%) 1.0956
+saving model at iteration 53000 with loss 1.0956
+> elle est a son hotel maintenant .
+= she is in her hotel now .
+< she is in on now . <EOS>
+
+> ils sont encore des enfants .
+= they are still children .
+< they are still children children . <EOS>
+
+> je suis assez grand pour boire un coup .
+= i m old enough to drink .
+< i m old enough to drink . <EOS>
+
+> c est un gentleman .
+= he is quite a gentleman .
+< he s a gentleman . <EOS>
+
+> elle montra son courage face au danger .
+= she showed her courage in the face of danger .
+< she showed her the of the <EOS>
+
+184m 22s (- 71m 41s) (54000 72%) 1.0725
+saving model at iteration 54000 with loss 1.0725
+> elle est en train de regarder de l autre cote .
+= she s looking the other way .
+< she s fresh by . <EOS>
+
+> je suis satisfait .
+= i m satisfied .
+< i m satisfied . <EOS>
+
+> vous etes trop poli .
+= you re too polite .
+< you re too polite . <EOS>
+
+> je cherche ma cle .
+= i m looking for my key .
+< i m looking for my key . <EOS>
+
+> elle attend famille .
+= she s pregnant .
+< she s pregnant . <EOS>
+
+187m 44s (- 68m 16s) (55000 73%) 1.1099
+191m 11s (- 64m 52s) (56000 74%) 1.0083
+saving model at iteration 56000 with loss 1.0083
+> je ne suis pas aussi bete que tu le penses .
+= i m not as stupid as you think i am .
+< i m not as stupid as you think i am . <EOS>
+
+> c est un citoyen respectueux des lois .
+= he s a law abiding citizen .
+< he s an expert at . <EOS>
+
+> je n en ai pas encore tout a fait termine .
+= i m not quite finished yet .
+< i m not quite finished . <EOS>
+
+> ils discutent du probleme .
+= they are discussing the problem .
+< they are willing to the problem . <EOS>
+
+> je ne suis pas encore pret .
+= i m still not ready yet .
+< i m not ready yet . <EOS>
+
+194m 36s (- 61m 27s) (57000 76%) 1.0288
+198m 6s (- 58m 3s) (58000 77%) 0.9913
+saving model at iteration 58000 with loss 0.9913
+> je suis certain de trouver un moyen .
+= i m sure i will find a way .
+< i am sure i have a student . <EOS>
+
+> tu preches des convaincues .
+= you re preaching to the choir .
+< you re preaching to the choir . <EOS>
+
+> je suis en train de cooperer .
+= i m cooperating .
+< i m on . <EOS>
+
+> vous etes tous contents .
+= you re all happy .
+< you re all happy . <EOS>
+
+> elle ecrit une lettre maintenant .
+= she is writing a letter now .
+< she is writing a letter now . <EOS>
+
+201m 40s (- 54m 41s) (59000 78%) 0.9846
+saving model at iteration 59000 with loss 0.9846
+> je suis vraiment desolee .
+= i am truly sorry .
+< i m really sorry . <EOS>
+
+> je suis incroyablement occupe .
+= i m incredibly busy .
+< i m from busy . <EOS>
+
+> nous sortons ensemble .
+= we re dating .
+< we re going together . . <EOS>
+
+> c est une gentille personne .
+= he is a nice person .
+< he is a nice person . <EOS>
+
+> je vais faire de mon mieux .
+= i m going to do my best .
+< i m going to do my . . <EOS>
+
+205m 4s (- 51m 16s) (60000 80%) 0.9576
+saving model at iteration 60000 with loss 0.9576
+> je ne suis pas sur de l endroit ou habite tom .
+= i m not sure where tom lives .
+< i m not sure i follow tom . . <EOS>
+
+> elle est bien plus lourde que lui .
+= she s much heavier than him .
+< she s smarter than than . <EOS>
+
+> je suis desole je ne te reconnais pas .
+= i m sorry i don t recognize you .
+< i m sorry i don t recognize you . <EOS>
+
+> vous ne dites pas la verite .
+= you re not telling the truth .
+< you re not the first . <EOS>
+
+> elle fait des progres en chinois .
+= she is progressing in chinese .
+< she s chinese in chinese . <EOS>
+
+208m 28s (- 47m 50s) (61000 81%) 0.9215
+saving model at iteration 61000 with loss 0.9215
+> vous n etes pas contraries si ?
+= you re not upset are you ?
+< you re not upset are you ? <EOS>
+
+> ils sont en train de temporiser .
+= they re stalling .
+< they re stalling . <EOS>
+
+> nous sommes prets a y aller .
+= we re ready to go .
+< we re ready to go . <EOS>
+
+> tu analyses trop .
+= you re over analyzing .
+< you re too trusting . <EOS>
+
+> elle parle chinois .
+= she speaks chinese .
+< she speaks chinese . <EOS>
+
+211m 46s (- 44m 24s) (62000 82%) 0.9220
+215m 8s (- 40m 58s) (63000 84%) 0.9694
+218m 26s (- 37m 32s) (64000 85%) 0.8983
+saving model at iteration 64000 with loss 0.8983
+> j essaie de garder de la place pour le dessert .
+= i m trying to save room for dessert .
+< i m trying to save out for the <EOS>
+
+> tu n es pas le seul a avoir ete blesse .
+= you re not the only one that was hurt .
+< you re not the only one who feels . <EOS>
+
+> elle a reussi a obtenir ce qu elle voulait .
+= she succeeded in getting what she wanted .
+< she s been in what she s her . <EOS>
+
+> je vais en europe la semaine prochaine .
+= i am going to europe next week .
+< i m going to going her next week . <EOS>
+
+> il est scenariste .
+= he s a scriptwriter .
+< he is a . . <EOS>
+
+221m 43s (- 34m 6s) (65000 86%) 0.9173
+225m 4s (- 30m 41s) (66000 88%) 0.8584
+saving model at iteration 66000 with loss 0.8584
+> je m occupe de mon grand pere .
+= i m taking care of my grandfather
+< i am taking care of my grandfather <EOS>
+
+> tu es idiote .
+= you re being silly .
+< you re silly . <EOS>
+
+> je suis un etre mauvais .
+= i am a bad person .
+< i m a bad person . <EOS>
+
+> il cherche un emploi .
+= he is seeking employment .
+< he is looking for a job . <EOS>
+
+> j en suis absolument certain .
+= i m absolutely certain of it .
+< i m sure of it . <EOS>
+
+228m 27s (- 27m 16s) (67000 89%) 0.9029
+231m 47s (- 23m 51s) (68000 90%) 0.8602
+235m 7s (- 20m 26s) (69000 92%) 0.8676
+238m 26s (- 17m 1s) (70000 93%) 0.7969
+saving model at iteration 70000 with loss 0.7969
+> je suis sure de remporter le match de tennis .
+= i m certain that i ll win the tennis match .
+< i am certain that i ll win the tennis match . <EOS>
+
+> je ne suis pas un professionnel .
+= i m not a professional .
+< i m not a violent . <EOS>
+
+> c est un homme d affaire a succes .
+= he s a successful businessman .
+< he s a successful businessman of a <EOS>
+
+> il bout de colere .
+= he is boiling with rage .
+< he is ashamed of his <EOS>
+
+> elle est affairee comme une abeille .
+= she is as busy as a bee .
+< she is as busy as a bee . <EOS>
+
+241m 48s (- 13m 37s) (71000 94%) 0.7973
+245m 9s (- 10m 12s) (72000 96%) 0.8268
+248m 25s (- 6m 48s) (73000 97%) 0.7886
+saving model at iteration 73000 with loss 0.7886
+> j echoue dans mon travail .
+= i m failing at my job .
+< i m not in my job . <EOS>
+
+> je ne suis pas en forme .
+= i m out of shape .
+< i m not fit . <EOS>
+
+> je suis libre jusqu a heures ce soir .
+= i am free till o clock this evening .
+< i m free to new tonight tonight . <EOS>
+
+> c est le seul de mes amis qui a du talent .
+= he is the only one of my friends that is talented .
+< he is the of of of of of my . . <EOS>
+
+> je suis mauvais aux echecs .
+= i m terrible at chess .
+< i m terrible at chess . <EOS>
+
+251m 46s (- 3m 24s) (74000 98%) 0.8566
+255m 11s (- 0m 0s) (75000 100%) 0.8372
+> nous sommes toutes en train d etre manipulees .
+= we re all being manipulated .
+< we re all being manipulated . <EOS>
+
+> elles sont endormies .
+= they re asleep .
+< they re asleep . <EOS>
+
+> tu es le doyen .
+= you re the oldest .
+< you re the oldest . <EOS>
+
+> vous etes tellement previsibles !
+= you re so predictable .
+< you re so sweet . <EOS>
+
+> je me rejouis que vous n ayez pas ete blessees .
+= i m glad you weren t injured .
+< i m glad you weren t injured . <EOS>
+
+> c est un bon a rien .
+= he is good for nothing .
+< he is good for nothing . <EOS>
+
+> j ai dix huit ans .
+= i m years old .
+< i am years . <EOS>
+
+> tu preches un convaincu .
+= you re preaching to the choir .
+< you re preaching to the choir . <EOS>
+
+> je suis ravi que vous ayez souleve ca .
+= i m glad you brought that up .
+< i m glad you brought that up . <EOS>
+
+> il a tendance a se mettre en colere .
+= he is inclined to get mad .
+< he s in to . . <EOS>
+
