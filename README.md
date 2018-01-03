@@ -20,12 +20,43 @@ At each step, the coeffiencient takes in its hidden state and its last output (w
 # Parameters and Results
 In this example, all three encoders have the same architecture except that they respectively have hidden state size 256, 64, 16, and so fusion_size = 256 + 64 +16. The learnign rate is 0.01 with momentum 0.2 (I experimented with momentum 0.2, 0.5, and 0.9, and 0.2 seems to render the fastest and more stable convergence). I was sort of expecting that having different hidden-sizes might make the encoders learn to encode features of a sentence at different length scales, but in practice I find it extremely hard and slow to train.
 
-Some sample translation (> denotes the original French sentence, = denotes the target, < denotes the translated English). This is the output at epoch 0.5 (since it takes rather long to train):
+After 5.5 epochs, the loss looks like this. It converges at the same speed as normal RNN decoder and encoder with respect to the sample size, but it takes about 3 times longer to train:
+<img src="img/plot.png" alt="loss">
 
+Some sample translation (> denotes the original French sentence, = denotes the target, < denotes the translated English). This is the output at epoch 5.5:
+```
+> nous sommes toutes en train d etre manipulees .
+= we re all being manipulated .
+< we re all being manipulated . <EOS>
+
+> vous etes tellement previsibles !
+= you re so predictable .
+< you re so sweet . <EOS>
+
+> je me rejouis que vous n ayez pas ete blessees .
+= i m glad you weren t injured .
+< i m glad you weren t injured . <EOS>
+
+> c est un bon a rien .
+= he is good for nothing .
+< he is good for nothing . <EOS>
+
+> tu preches un convaincu .
+= you re preaching to the choir .
+< you re preaching to the choir . <EOS>
+
+> je suis ravi que vous ayez souleve ca .
+= i m glad you brought that up .
+< i m glad you brought that up . <EOS>
+
+> il a tendance a se mettre en colere .
+= he is inclined to get mad .
+< he s in to . . <EOS>
+```
+
+For comparison, this is its ouput at epoch 0.5:
 
 ```
-21m 54s (- 251m 57s) (6000 8%) 2.8058
-saving model at iteration 6000 with loss 2.8058
 > je suis heureux de vous avoir rencontre .
 = i m very happy to make your acquaintance .
 < i m glad you to help you . . <EOS>
